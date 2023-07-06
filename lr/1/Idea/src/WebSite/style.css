@@ -1,0 +1,67 @@
+/* CSS Style for Index.html */
+
+header{
+    background-color:lightseagreen;} /* Color for bg in header */
+
+footer{
+    background-color:coral;}   /* Color for bg in footer */
+
+.container{
+    width: 100%;
+    max-width: 1024px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color:burlywood;
+    }
+
+.logo{float:left;}
+
+nav{float:right;}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    }
+
+nav li{display: inline-block;}
+
+.container:after, .row:after{
+    content:"";
+    display:table;
+    clear:both;
+    }
+
+nav a{
+    text-decoration:none;
+    line-height: 62px;
+    }
+
+.col-1-2{
+    width:50%;
+    float:left;
+    background:green;
+    }
+
+.col-1-3{
+    width:33.3%;
+    float:left;
+    background:yellow;
+    }
+
+.col-1-4{
+    width:25%;
+    float:left;
+    background:red;
+    }
+
+.col-2-3{
+    width:66.6%;
+    float:left;
+    background:seashell;
+    }
+
+.row{margin-bottom:15px;}
+
+.row-one{background:lightblue;}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3webLab</title>
+    <script>
+        var x = 8;
+        var y = 3;
+        var st = false;
+        var proc;
+        function start_stop() {
+            if (st){
+                window.clearInterval(proc);
+                st = false;
+                document.all.b1.innerHTML=("Start");
+            }else{
+                proc=window.setInterval("move()",100);
+                st = true;
+                document.all.b1.innerHTML=("Stop");
+            }
+        }
+        function move() {
+            var yy = parseInt(document.all.lv.style.top);
+            var xx = parseInt(document.all.lv.style.left);
+            document.all.lv.style.top=yy+y+"px";
+            document.all.lv.style.left=xx+x+"px";
+
+        }
+    </script>
+</head>
+<body>
+    <button id="b1" onclick="start_stop()" style="position: absolute; left: 300px; top: 5px">Start</button>
+    <img id="lv" src="1.bmp" style="position: absolute; top: 3px; left: 20px">
+</body>
+</html>
